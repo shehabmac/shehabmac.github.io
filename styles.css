@@ -1,0 +1,263 @@
+/* General Styles */
+body { 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('images/tech-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000; /* Fallback color in case the image doesn’t load */
+}
+
+/* Navigation */
+header {
+    background: #c0d6f9;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+/* Intro Section */
+#intro {
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark background with transparency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: white; /* Ensures text is readable */
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glitch Effect */
+.glitch {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: glitch 0.5s infinite;
+}
+
+/* Keyframe Animation for Glitch */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red, -2px -2px blue; }
+    25% { text-shadow: -2px -2px red, 2px 2px blue; }
+    50% { text-shadow: 2px -2px red, -2px 2px blue; }
+    75% { text-shadow: -2px 2px red, 2px -2px blue; }
+    100% { text-shadow: 2px 2px red, -2px -2px blue; }
+}
+
+
+#about {
+    background: rgba(220, 236, 255, 0.95); /* Light background with slight transparency */
+    padding: 300px 200px;
+    border-radius: 40px; /* Smooth rounded corners */
+    max-width: 100%; /* Keeps it centered and not too wide */
+    margin-top: 1000px;
+}
+
+/* Container for image & text */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling */
+.about-text {
+    max-width: 800px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* Work Experience */
+
+#work {
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark background with transparency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: white; /* Ensures text is readable */
+    text-align: left;
+    max-width: 100%;
+    margin: auto;
+    padding: 200px 50px;
+    margin-top: 400px;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.work-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.work-entry h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+
+/* Skills */
+#skills {
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark background with transparency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: white; /* Ensures text is readable */
+    text-align: center;
+    margin: 10px ;
+    gap: 20px;
+    padding: 200px 50px;
+    margin-top: 350px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 10px ;
+}
+
+.skill-column {
+    background: rgba(207, 49, 49, 0.942);
+    padding: 20px;
+    border-radius: 40px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Projects */
+#projects {
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark background with transparency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: white; /* Ensures text is readable */
+    text-align: center;
+    padding: 300px 50px;
+    margin-top: 200px;
+}
+
+/* Project Cards */
+.projects-container {
+    display: flex;
+    gap: 30px;  /* Reduce space between cards */
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #614e80;
+    padding: 30px;
+    border-radius: 40px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce Bottom Margin */
+.project-card p {
+    margin-top: 10px;
+}
+
+/* Podcast Header Styling */
+#podcast {
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark background with transparency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: white; /* Ensures text is readable */
+    margin-top: 300px;
+}
+.podcast-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* Adds space between text and logo */
+    padding: 100px 20px;
+}
+
+.kanaka-logo {
+    width: 200px; /* Adjust size as needed */;
+    height: 200px;
+    border-radius: 100px;
+}
+
+/* Podcast Description Image */
+.podcast-description {
+    width: 40%; /* Makes it span the full width of the page */
+    max-width: none; /* Removes any max width restrictions */
+    height: auto; /* Maintains aspect ratio to prevent distortion */
+    margin: 20px 0; /* Adjusts spacing */
+    border-radius: 20px; /* Removes rounded edges for a full-width effect */
+}
+
+#contact{
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark background with transparency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: white; /* Ensures text is readable */
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    
+}
