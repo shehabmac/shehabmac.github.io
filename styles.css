@@ -41,15 +41,17 @@ section {
     padding: 40px 20px;
 }
 
-#intro {
+#about, #work, #projects, #skills, #podcast, #contact, #intro {
+    padding: 150px 50px;
+    margin-top: 150px;
     background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+}
+
+#intro {
     font-size: 2.5em;
     font-weight: bold;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,14 +70,6 @@ section {
     50% { text-shadow: 2px -2px red, -2px 2px blue; }
     75% { text-shadow: -2px 2px red, 2px -2px blue; }
     100% { text-shadow: 2px 2px red, -2px -2px blue; }
-}
-
-#about {
-    background: rgba(220, 236, 255, 0.95);
-    padding: 300px 200px;
-    border-radius: 40px;
-    max-width: 100%;
-    margin-top: 1000px;
 }
 
 .about-container {
@@ -106,19 +100,11 @@ section {
 }
 
 html{
-   
     scroll-behavior: smooth;
 }
 
 #work {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    color: white;
     text-align: left;
-    max-width: 100%;
-    margin: auto;
-    padding: 200px 50px;
-    margin-top: 400px;
 }
 
 .work-header {
@@ -144,15 +130,6 @@ html{
     margin-bottom: 5px;
 }
 
-#projects {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px; 
-    color: white;
-    text-align: center;
-    padding: 300px 50px;
-    margin-top: 200px;
-}
-
 .projects-container {
     display: flex;
     gap: 30px;
@@ -165,21 +142,6 @@ html{
     border-radius: 40px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-card p {
-    margin-top: 10px;
-}
-
-#skills {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    margin: 10px ;
-    gap: 20px;
-    padding: 200px 50px;
-    margin-top: 350px;
 }
 
 .skills-grid {
@@ -202,12 +164,6 @@ html{
     margin-bottom: 10px;
 }
 
-#podcast {
-    background: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px; 
-    color: white;
-    margin-top: 300px;
-}
 .podcast-header {
     display: flex;
     align-items: center;
@@ -228,13 +184,6 @@ html{
     height: auto; 
     margin: 20px 0;
     border-radius: 20px; 
-}
-
-#contact{
-    background: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px;
-    color: white;
-    margin-top: 30px;
 }
 
 footer {
