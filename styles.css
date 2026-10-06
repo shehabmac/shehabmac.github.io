@@ -180,8 +180,8 @@ h3 { margin: 0; font-size: 18px; }
 
 .hero h1 {
     margin: 0 0 18px;
-    font-size: 46px;
-    line-height: 1.12;
+    font-size: 58px;
+    line-height: 1.1;
     letter-spacing: -0.5px;
 }
 
@@ -498,7 +498,7 @@ li::marker { color: var(--gold); }
     .hero { grid-template-columns: 1fr; padding: 36px 24px; text-align: center; }
     .hero-photo { order: -1; }
     .profile-img { max-width: 220px; }
-    .hero h1 { font-size: 34px; }
+    .hero h1 { font-size: 40px; }
     .btn-row { justify-content: center; }
     .stats { grid-template-columns: repeat(2, 1fr); }
     .skills-layout { grid-template-columns: 1fr; }
