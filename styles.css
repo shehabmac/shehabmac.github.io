@@ -1,4 +1,4 @@
-body { 
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ section {
     padding: 40px 20px;
 }
 
-#about, #work, #projects, #skills, #podcast, #contact, #intro {
+#about, #education, #work, #projects, #skills, #podcast, #contact, #intro {
     padding: 150px 50px;
     margin-top: 150px;
     background: rgba(0, 0, 0, 0.7);
@@ -99,11 +99,24 @@ section {
     line-height: 2;
 }
 
+/* Summary of Qualifications (About section) */
+.subheading {
+    font-size: 22px;
+    margin: 30px 0 10px;
+}
+
+.summary-list {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.7;
+    padding-left: 24px;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
-#work {
+#education, #work {
     text-align: left;
 }
 
@@ -111,6 +124,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .work-link {
@@ -130,8 +144,29 @@ html{
     margin-bottom: 5px;
 }
 
-.projects-container {
+/* Dates shown on the right of Education / Activities entries */
+.entry-dates {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.activities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activities-list li {
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 6px 0;
+}
+
+/* 4 project cards: 2 x 2 grid instead of a single squeezed row */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin: 0 auto;
 }
@@ -168,7 +203,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px; 
+    gap: 100px;
     padding: 100px 20px;
 }
 
@@ -179,16 +214,21 @@ html{
 }
 
 .podcast-description {
-    width: 40%; 
+    width: 40%;
     max-width: none;
-    height: auto; 
+    height: auto;
     margin: 20px 0;
-    border-radius: 20px; 
+    border-radius: 20px;
+}
+
+/* Contact links */
+#contact a {
+    color: #8ec5ff;
 }
 
 footer {
     background: #222;
     color: white;
     padding: 15px;
-    
+
 }
