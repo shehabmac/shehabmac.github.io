@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shehab Ahmed | Automation &amp; Robotics Engineering</title>
     <meta name="description" content="Portfolio of Shehab Ahmed, Automation Engineering Technology student at McMaster University (graduating December 2026). PLC and robot programming, HMI, and IIoT.">
-    <meta name="theme-color" content="#1f3864">
+    <meta name="theme-color" content="#0a0a0b">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shehab Ahmed | Automation &amp; Robotics Engineering">
     <meta property="og:description" content="Industrial automation, robotics, and IIoT. Two co-op terms at Skyjack (Linamar). McMaster B.Tech, graduating December 2026.">
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
         <nav class="nav" aria-label="Main">
-            <a class="brand" href="#top">Shehab Ahmed</a>
+            <a class="brand" href="#top"><span class="brand-dot"></span>Shehab Ahmed</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,25 +32,31 @@
     <main id="main">
 
         <section class="hero" id="top">
-            <img src="images/me.jpg" alt="Photo of Shehab Ahmed" class="profile-img">
             <div class="hero-text">
-                <h1>Shehab Ahmed</h1>
-                <p class="hero-title">Automation Engineering Technology &middot; McMaster University</p>
-                <p class="hero-tagline">
-                    Industrial automation, robotics, and IIoT: PLC and robot programming, HMI design, and cloud-connected systems.
-                    Two co-op terms at Skyjack (Linamar). Graduating December 2026 and seeking automation and robotics engineering roles.
-                </p>
+                <p class="kicker">Automation Engineering Technology &middot; McMaster University</p>
+                <h1>I program robots, PLCs, and connected systems.</h1>
+                <p class="code-line">&lt;code&gt; graduating December 2026 &middot; seeking automation &amp; robotics roles &lt;/code&gt;</p>
                 <div class="btn-row">
-                    <a class="btn btn-primary" href="Shehab_Ahmed_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+                    <a class="btn btn-primary" href="Shehab_Ahmed_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+                    <a class="btn" href="#contact">Contact Me</a>
                     <a class="btn" href="https://www.linkedin.com/in/shehab-ahmed-automation" target="_blank" rel="noopener">LinkedIn</a>
                     <a class="btn" href="https://github.com/shehabmac" target="_blank" rel="noopener">GitHub</a>
-                    <a class="btn" href="mailto:shehab.f.ahmed@gmail.com">Email</a>
                 </div>
+            </div>
+            <div class="hero-photo">
+                <img src="images/me.jpg" alt="Photo of Shehab Ahmed" class="profile-img">
             </div>
         </section>
 
+        <section class="stats" aria-label="Highlights">
+            <div class="stat"><strong>2</strong><span>Co-op terms at Skyjack (Linamar)</span></div>
+            <div class="stat"><strong>1,000+</strong><span>Robot targets renamed with AI-assisted tooling</span></div>
+            <div class="stat"><strong>100+</strong><span>Students guided as a C++ teaching assistant</span></div>
+            <div class="stat"><strong>9.0/12</strong><span>GPA, McMaster B.Tech (Co-op)</span></div>
+        </section>
+
         <section id="about">
-            <h2>About</h2>
+            <h2><span class="bar-accent"></span>About</h2>
             <p class="lead">
                 I'm a final-year Automation Engineering Technology student at McMaster University with a strong background in industrial automation,
                 IoT, and smart technologies. I enjoy working with control systems, robotics, and cloud-integrated devices, finding ways to make
@@ -66,8 +73,57 @@
             </ul>
         </section>
 
+        <section id="skills">
+            <h2><span class="bar-accent"></span>Skills</h2>
+
+            <div class="skills-layout">
+                <div class="panel">
+                    <h3 class="panel-title">Core strengths</h3>
+                    <!-- To change a bar: edit the --w value (0-100%) and the level word. -->
+                    <ul class="meters">
+                        <li><div class="meter-head"><span>PLC programming</span><em>Advanced</em></div><div class="meter"><span style="--w:88%"></span></div></li>
+                        <li><div class="meter-head"><span>HMI design (FactoryTalk, LabVIEW)</span><em>Advanced</em></div><div class="meter"><span style="--w:85%"></span></div></li>
+                        <li><div class="meter-head"><span>Robot programming (ABB, Fanuc)</span><em>Proficient</em></div><div class="meter"><span style="--w:78%"></span></div></li>
+                        <li><div class="meter-head"><span>C++</span><em>Proficient</em></div><div class="meter"><span style="--w:78%"></span></div></li>
+                        <li><div class="meter-head"><span>Python</span><em>Proficient</em></div><div class="meter"><span style="--w:72%"></span></div></li>
+                        <li><div class="meter-head"><span>Industrial networking &amp; IIoT (Ethernet/IP, MQTT)</span><em>Proficient</em></div><div class="meter"><span style="--w:72%"></span></div></li>
+                        <li><div class="meter-head"><span>MATLAB &amp; Simulink</span><em>Proficient</em></div><div class="meter"><span style="--w:68%"></span></div></li>
+                        <li><div class="meter-head"><span>CAD (AutoCAD, SolidWorks)</span><em>Working knowledge</em></div><div class="meter"><span style="--w:60%"></span></div></li>
+                        <li><div class="meter-head"><span>Machine learning (NumPy, OpenCV)</span><em>Developing</em></div><div class="meter"><span style="--w:45%"></span></div></li>
+                    </ul>
+                </div>
+
+                <div class="skills-side">
+                    <div class="panel">
+                        <h3 class="panel-title">Automation &amp; Control Systems</h3>
+                        <ul class="chips">
+                            <li>RSLogix</li><li>RSLinx</li><li>Studio5000</li><li>Fanuc Ladder 3</li><li>LabVIEW</li><li>FactoryTalk View</li><li>6-axis robotics (ABB, Fanuc)</li><li>Motion control</li><li>P&amp;IDs</li><li>Instrumentation calibration</li>
+                        </ul>
+                    </div>
+                    <div class="panel">
+                        <h3 class="panel-title">IIoT &amp; Predictive Maintenance</h3>
+                        <ul class="chips">
+                            <li>MQTT</li><li>Edge/cloud computing</li><li>Network architecture design</li><li>Vibration analysis</li><li>FFT-based condition monitoring</li><li>Siemens IDE</li><li>Ignition SCADA</li>
+                        </ul>
+                    </div>
+                    <div class="panel">
+                        <h3 class="panel-title">Software &amp; Machine Learning</h3>
+                        <ul class="chips">
+                            <li>Python</li><li>C++</li><li>C#</li><li>SQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>NumPy</li><li>OpenCV</li><li>Neural networks</li>
+                        </ul>
+                    </div>
+                    <div class="panel">
+                        <h3 class="panel-title">CAD, Simulation &amp; Process</h3>
+                        <ul class="chips">
+                            <li>AutoCAD</li><li>SolidWorks</li><li>MATLAB</li><li>Simulink</li><li>Chemical process design</li><li>Lean Six Sigma</li><li>MS Office (Excel, Macros, SharePoint, Teams)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="experience">
-            <h2>Experience</h2>
+            <h2><span class="bar-accent"></span>Experience</h2>
 
             <article class="entry">
                 <header class="entry-head">
@@ -133,8 +189,8 @@
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="card-grid projects-grid">
+            <h2><span class="bar-accent"></span>Projects</h2>
+            <div class="card-grid">
 
                 <article class="card">
                     <h3>SAMQ &ndash; 6-Axis Robotic Arm</h3>
@@ -179,59 +235,8 @@
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="card-grid skills-grid">
-                <div class="card">
-                    <h3>Automation &amp; Control Systems</h3>
-                    <ul>
-                        <li>PLC programming (RSLogix, RSLinx, Studio5000, Fanuc Ladder 3)</li>
-                        <li>HMI (LabVIEW, FactoryTalk View)</li>
-                        <li>6-axis robotic and motion control programming (ABB, Fanuc)</li>
-                        <li>P&amp;IDs and instrumentation calibration</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>IIoT &amp; Predictive Maintenance</h3>
-                    <ul>
-                        <li>Device/network architecture design (MQTT, edge/cloud computing)</li>
-                        <li>Vibration analysis and FFT-based condition monitoring</li>
-                        <li>Siemens IDE and Ignition SCADA dashboards</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Software Development &amp; Machine Learning</h3>
-                    <ul>
-                        <li>Python, C++, C#, SQL</li>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>NumPy, OpenCV, neural networks</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>CAD &amp; Simulation Tools</h3>
-                    <ul>
-                        <li>AutoCAD, SolidWorks</li>
-                        <li>MATLAB, Simulink</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Manufacturing &amp; Process Engineering</h3>
-                    <ul>
-                        <li>Chemical process design (mass and energy balance)</li>
-                        <li>Lean Six Sigma</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Office Tools</h3>
-                    <ul>
-                        <li>MS Office suite (Excel, Macros, Word, SharePoint, Teams)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <section id="education">
-            <h2>Education</h2>
+            <h2><span class="bar-accent"></span>Education</h2>
             <article class="entry">
                 <header class="entry-head">
                     <div>
@@ -254,7 +259,7 @@
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2><span class="bar-accent"></span>Contact</h2>
             <p class="lead">I'm happy to talk about automation and robotics roles. The fastest way to reach me is by email.</p>
             <ul class="contact-list">
                 <li><span>Email</span><a href="mailto:shehab.f.ahmed@gmail.com">shehab.f.ahmed@gmail.com</a></li>
@@ -263,6 +268,10 @@
                 <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/shehab-ahmed-automation" target="_blank" rel="noopener">in/shehab-ahmed-automation</a></li>
                 <li><span>GitHub</span><a href="https://github.com/shehabmac" target="_blank" rel="noopener">github.com/shehabmac</a></li>
             </ul>
+            <div class="btn-row contact-btns">
+                <a class="btn btn-primary" href="mailto:shehab.f.ahmed@gmail.com">Send an Email</a>
+                <a class="btn" href="Shehab_Ahmed_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            </div>
         </section>
 
     </main>
@@ -271,5 +280,21 @@
         &copy; 2026 Shehab Ahmed
     </footer>
 
+    <script>
+        // Animate skill bars when they scroll into view (bars are fully visible if JS is unavailable).
+        (function () {
+            var meters = document.querySelectorAll('.meter');
+            if (!('IntersectionObserver' in window)) {
+                meters.forEach(function (m) { m.classList.add('in-view'); });
+                return;
+            }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.4 });
+            meters.forEach(function (m) { io.observe(m); });
+        })();
+    </script>
 </body>
 </html>
