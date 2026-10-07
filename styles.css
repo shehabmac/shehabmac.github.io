@@ -416,6 +416,23 @@ li::marker { color: var(--gold); }
 
 .card ul { color: #d9d9de; }
 
+/* With an odd number of project cards, let the last one span the full row */
+.card-grid .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+/* Project demo videos: uniform 16:9 frame; portrait clips are pillar-boxed */
+.card-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #000;
+}
+.card-video.portrait { aspect-ratio: 4 / 5; max-height: 520px; }
+.card-grid .card:last-child:nth-child(odd) .card-video { max-height: 380px; }
+
 .card-meta {
     margin: 2px 0 6px;
     color: var(--gold);
